@@ -30,8 +30,26 @@ public class CalendarioBasico
      */
     public String devolverFecha(){
         String textoADevolver="";
-        
-        textoADevolver = dia + "-" + mes + "-" + año ;
+        //variables locales por cada parte de textoadevolver
+        String parte1 = dia + "";
+        String parte2 = mes + "";
+        String parte3 = año + "";
+        //cuanto mide de largo la parte 1 y si no mide 2 le añade un cero delante
+        if (parte1.length()<2)
+        {
+            parte1 = "0" + parte1;   
+        }
+        //hasta septiembre por que es 09 y luego 10
+        if (mes < 10)
+        {
+         parte2= "0" + parte2;  
+        }
+        // hasta el año 09 por que no tiene 2 digitos
+        if (año < 10 )
+        {
+          parte3 = "0" + parte3;  
+        }
+        textoADevolver = parte1 + "-" + parte2 + "-" + parte3 ;
         return textoADevolver;
     }
 }
