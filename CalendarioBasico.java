@@ -57,7 +57,7 @@ public class CalendarioBasico
      */
     public void avanzarFecha()
     {
-
+        dia = dia +1;
         if (dia == 31){
 
             dia = 1;
