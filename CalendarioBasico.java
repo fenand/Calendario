@@ -16,13 +16,22 @@ public class CalendarioBasico
         año = 1;
     }
 
-       /**
-        * Fijar fecha
-        */
-       public void setFecha(int nuevoDia,int nuevoMes, int nuevoAño){
-         dia = nuevoDia;
-         mes = nuevoMes;
-         año = nuevoAño;
-        }
-       
+    /**
+     * Fijar fecha
+     */
+    public void setFecha(int nuevoDia,int nuevoMes, int nuevoAño){
+        dia = nuevoDia;
+        mes = nuevoMes;
+        año = nuevoAño;
+    }
+
+    /**
+     * metodo para obtener la fecha
+     */
+    public String devolverFecha(){
+        String textoADevolver="";
+        
+        textoADevolver = dia + "-" + mes + "-" + año ;
+        return textoADevolver;
+    }
 }
