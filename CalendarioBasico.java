@@ -19,7 +19,7 @@ public class CalendarioBasico
     /**
      * Fijar fecha
      */
-    public void setFecha(int nuevoDia,int nuevoMes, int nuevoAño)
+    public void fijarFecha(int nuevoDia,int nuevoMes, int nuevoAño)
     {
         dia = nuevoDia;
         mes = nuevoMes;
@@ -29,7 +29,7 @@ public class CalendarioBasico
     /**
      * metodo para obtener la fecha
      */
-    public String devolverFecha()
+    public String obtenerFecha()
     {
         String textoADevolver="";
         //variables locales por cada parte de textoadevolver
